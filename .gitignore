@@ -1,0 +1,20 @@
+# Replication data: download from openICPSR (Blattman, Jamison & Sheridan 2017); not redistributed
+Data/
+Literature/
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+*conflicted copy*
+
+# R / OS / editor
+.Rhistory
+.RData
+.Rproj.user
+.DS_Store

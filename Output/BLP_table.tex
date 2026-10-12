@@ -1,0 +1,22 @@
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lcccccc}
+\toprule
+& \multicolumn{3}{c}{$\hat\beta_1$ (ATE)} &
+  \multicolumn{3}{c}{$\hat\beta_2$ (Heterogeneity)} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Analysis & Estimate & 90\% CI & $p$-value
+         & Estimate & 90\% CI & $p$-value \\
+\midrule
+A1: CBT only, ST ASB & $-0.225$ & $[-0.473,\ 0.022]$ & 0.073 & $\phantom{-}0.146$ & $[-0.339,\ 0.654]$ & 0.556 \\
+A2: CBT only, LT ASB & $-0.010$ & $[-0.250,\ 0.227]$ & 0.931 & $-0.244$ & $[-1.258,\ 0.763]$ & 0.673 \\
+A3: CBT only, ST Theft & $-0.934$ & $[-2.078,\ 0.223]$ & 0.109 & $\phantom{-}0.271$ & $[-0.210,\ 0.861]$ & 0.198 \\
+\midrule
+A4: CBT (any), ST ASB & $-0.218$ & $[-0.382,{-0.054}]$ & 0.009 & $\phantom{-}0.282$ & $[-0.158,\ 0.735]$ & 0.201 \\
+A5: CBT (any), LT ASB & $-0.176$ & $[-0.334,{-0.013}]$ & 0.034 & $\phantom{-}0.557$ & $[-0.028,\ 1.130]$ & 0.060 \\
+A6: CBT (any), ST Theft & $-0.649$ & $[-1.338,\ 0.081]$ & 0.078 & $-0.065$ & $[-0.654,\ 0.493]$ & 0.819 \\
+\bottomrule
+\end{tabular}
+}
+\begin{minipage}{\textwidth}
+\footnotesize \textit{Notes:} Median estimates and 90\% confidence intervals over 100 random sample splits. $\hat\beta_1$ estimates the ATE; $\hat\beta_2$ tests $H_0$: no heterogeneity. Best learner by BLP criterion: A1: lasso; A2: random forest; A3: lasso; A4: lasso; A5: random forest; A6: lasso. Outcome for A1, A2, A4, A5: standardized antisocial behavior index (lower = more prosocial). A3, A6: number of thefts in the past two weeks. A4--A6 use the full $2\times2$ factorial design (any CBT vs.\ cash + control).
+\end{minipage}
